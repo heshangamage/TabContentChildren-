@@ -1,0 +1,25 @@
+<div [hidden]="!active" class="pane">
+  <form>
+    <div class="form-group">
+      <label for="user.firstName">First Name</label>
+      <input
+        id="user.firstName"
+        [(ngModel)]="user.firstName"
+        type="text"
+        class="form-control"
+        name="user.firstName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="user.LasttName">Last Name</label>
+      <input
+        id="user.LastName"
+        type="text"
+        [(ngModel)]="user.lastName"
+        class="form-control"
+        name="user.lastName"
+      />
+    </div>
+  </form>
+  <ng-content></ng-content>
+</div>
